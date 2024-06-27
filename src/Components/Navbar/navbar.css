@@ -1,0 +1,19 @@
+/* Desktop screens */
+
+.title{
+    color: #000;
+    font-family: Soria;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 !important;
+}
+.links{
+    color: #000;
+    font-family: "Satoshi Variable";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
