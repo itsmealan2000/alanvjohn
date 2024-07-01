@@ -1,4 +1,4 @@
-.main{
+.mainhome{
     height: 100vh;
 }
 .row{
@@ -103,6 +103,7 @@ img{
         height: 100px;
         bottom: 20px;
         left: 0px;
+        display: none;
     }
     .redcircle{
         width: 100px;

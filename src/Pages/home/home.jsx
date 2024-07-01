@@ -1,11 +1,12 @@
 import React from 'react'
 import './home.css'
 import Me from '../../assets/home/me.png'
+import About from '../about/about'
 
 function home() {
   return (
     <>
-    <div className="main container-fluid">
+    <div className="mainhome container-fluid">
       <div className="row mt-5">
         <div className="col-6 left">
         <h1>Hello, I am <br />
@@ -57,6 +58,9 @@ function home() {
         </div>
         </div>
       </div>
+      </div>
+      <div>
+        <About />
       </div>
     </>
   )

@@ -20,7 +20,7 @@ const pageVariants = {
 };
 
 const pageTransition = {
-  duration: 0.5,
+  duration: 1,
 };
 
 function App() {
@@ -39,6 +39,8 @@ function App() {
           },
           smartphone: {
             smooth: true,
+            lerp:0.5,
+            touchMultiplier: 0.01,
           },
         }}
       >

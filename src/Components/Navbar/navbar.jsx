@@ -18,6 +18,7 @@ function NavScrollExample() {
           <Nav
             className="ms-auto my-2 my-lg-0"
             style={{ maxHeight: '150px' }}
+            navbarScroll
           >
             {currentPath !== '/' && (
               <Nav.Link href="/" className='links'> Home </Nav.Link>
