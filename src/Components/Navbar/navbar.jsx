@@ -17,8 +17,7 @@ function NavScrollExample() {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="ms-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
+            style={{ maxHeight: '150px' }}
           >
             {currentPath !== '/' && (
               <Nav.Link href="/" className='links'> Home </Nav.Link>

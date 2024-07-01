@@ -38,8 +38,8 @@ img{
 }
 .circle{
     border-radius: 1119px;
-    background: radial-gradient(231% 135.8% at 0.9% 2.98%, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
-    backdrop-filter: blur(21px);
+    background: radial-gradient(231% 135.8% at 0.9% 2.98%, rgba(225, 220, 220, 0.4) 0%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(25px);
     position: absolute;
     width: 1119px;
     height: 1119px;
@@ -66,4 +66,52 @@ img{
     position: absolute;
     top: 5px;
     right: 2px;
+}
+
+
+/* mobile screen */
+@media only screen and (max-width: 600px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: var(--Number-2, 4rem);
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .left{
+        width: 95%;
+        padding-top: 22.5%;
+        height: 45%;
+    }
+    .right{
+        width: 100%;
+        top: 150px;
+        margin-top: 50px;
+        position: relative;
+    }
+    .circle{
+        margin-left: 200px;
+        width: 500px;
+        height: 500px;
+        bottom: -150px;
+    }
+    .bluecircle{
+        width: 100px;
+        height: 100px;
+        bottom: 20px;
+        left: 0px;
+    }
+    .redcircle{
+        width: 100px;
+        height: 100px;
+        top: 0px;
+        left: 50%;
+    }
+    .profileimage{
+        left: 100px;
+        bottom: 0px;
+    }
 }

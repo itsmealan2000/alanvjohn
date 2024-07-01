@@ -17,7 +17,7 @@ function home() {
           </p>
         </div>
         <div className="col right">
-        <img src={Me} alt="Me" className="img-fluid" />
+        <img src={Me} alt="Me" className="img-fluid profileimage" />
         <div className="circle"></div>
         <div className="bluecircle">
         <svg xmlns="http://www.w3.org/2000/svg" width="324" height="324" viewBox="0 0 324 324" fill="none">
