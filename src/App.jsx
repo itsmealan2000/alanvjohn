@@ -36,6 +36,8 @@ function App() {
     },
     smartphone: {
       smooth: true,
+      lerp: 0.05, 
+      multiplier: 5,
     },
   };
 
