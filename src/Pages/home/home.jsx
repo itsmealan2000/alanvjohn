@@ -26,7 +26,7 @@ function Home() {
             start: "top top", 
             end: "=+100", 
             scrub: true,
-            markers: true 
+            markers: false 
           }
         });
       });
@@ -38,7 +38,7 @@ function Home() {
             start: "top top", 
             end: "+=800",
             scrub: true,
-            markers: true 
+            markers: false 
           }
         });
       });
