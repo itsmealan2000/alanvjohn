@@ -14,24 +14,34 @@ function Home() {
   useEffect(() => {
     if (scroll && homeRef.current) {          // Locomotive Scroll
       scroll.update();
-
+      let mm = gsap.matchMedia();
+      mm.add("(min-width: 1440px)", () => {
       gsap.to(                      // GSAP animations 
-        ".left",
-        { opacity: 50, y: 100 },
+        ".mainhome",
         {
-          opacity: 1,
-          y: 0,
-          duration: 1,
+          duration: 0.5,
           scrollTrigger: {
-            trigger: ".mainhome",
-            start: "top 20%", // Adjust as needed
-            end: "bottom 90%", // Adjust as needed
-            scrub: true,
+            trigger: ".right",
             pin:true,
-            markers: false // Remove in production
+            start: "top top", 
+            end: "=+100", 
+            scrub: true,
+            markers: true 
           }
-        }
-      );
+        });
+      });
+      mm.add("(max-width: 600px)", () => {
+        gsap.to(".aboutmain", {
+          duration: 0.2,
+          scrollTrigger: {
+            trigger: ".left",
+            start: "top top", 
+            end: "+=800",
+            scrub: true,
+            markers: true 
+          }
+        });
+      });
     }
   }, [scroll]);
 
@@ -42,7 +52,7 @@ function Home() {
           <h1
             data-scroll
             data-scroll-direction="vertical"
-            data-scroll-speed="1"
+            data-scroll-speed="0.5"
             data-scroll-section
           >
             Hello, I am <br />
@@ -51,7 +61,7 @@ function Home() {
           <p
             data-scroll
             data-scroll-direction="vertical"
-            data-scroll-speed="0.9"
+            data-scroll-speed="0.3"
             data-scroll-section
           >
             A passionate software engineer based in Kerala. <br />
@@ -60,9 +70,18 @@ function Home() {
           </p>
         </div>
         <div className="col right">
-          <img src={Me} alt="Me" className="img-fluid profileimage" />
-          <div className="circle"></div>
-          <div className="bluecircle">
+          <img src={Me} alt="Me" className="img-fluid profileimage"  data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="0.8"
+            data-scroll-section />
+          <div className="circle" data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="0.8"
+            data-scroll-section></div>
+          <div className="bluecircle"  data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="0.8"
+            data-scroll-section>
             <svg xmlns="http://www.w3.org/2000/svg" width="324" height="324" viewBox="0 0 324 324" fill="none">
               <g filter="url(#filter0_f_8_7)">
                 <circle cx="162" cy="162" r="120" fill="url(#paint0_radial_8_7)" />
@@ -80,7 +99,10 @@ function Home() {
               </defs>
             </svg>
           </div>
-          <div className="redcircle">
+          <div className="redcircle" data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="0.5"
+            data-scroll-section>
             <svg xmlns="http://www.w3.org/2000/svg" width="188" height="321" viewBox="0 0 188 321" fill="none">
               <g filter="url(#filter0_f_8_15)">
                 <circle cx="160.5" cy="160.5" r="118.5" fill="url(#paint0_radial_8_15)" />

@@ -56,7 +56,7 @@ img{
     position: absolute;
     z-index: 2;
     bottom: 10px;
-    left: -20px;
+    left: 10px;
 }
 .redcircle{
     width: 237px;
@@ -72,10 +72,6 @@ img{
 
 /* mobile screen */
 @media only screen and (max-width: 600px){
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
     h1{
         font-size: var(--Number-2, 4rem);
     }
@@ -83,15 +79,15 @@ img{
         font-size: 1.1rem;
     }
     .left{
-        width: 95%;
-        padding-top: 22.5%;
-        height: 45%;
+        padding-top: 25%;
+        padding-bottom: 0;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
     }
     .right{
-        width: 100%;
-        top: 150px;
-        margin-top: 50px;
-        position: relative;
+        height: 500px;
+        top:-50px;
     }
     .circle{
         margin-left: 200px;
@@ -117,3 +113,4 @@ img{
         bottom: 0px;
     }
 }
+

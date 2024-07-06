@@ -31,13 +31,16 @@ function App() {
 
   const options = {
     smooth: true,
+    smoothClass:'has-scroll-smooth',
     tablet: {
       smooth: true,
     },
     smartphone: {
       smooth: true,
       lerp: 0.05, 
-      multiplier: 5,
+      touchMultiplier: 2, 
+      scrollFromAnywhere: true,
+      reloadOnContextChange:true,
     },
   };
 
@@ -104,6 +107,7 @@ function App() {
           />
         </Routes>
       </div>
+
     </LocomotiveScrollProvider>
   );
 }
