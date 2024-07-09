@@ -1,0 +1,25 @@
+.maincontact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    padding: 50px;
+    width: 75%;
+    border-radius: 10px;
+}
+.contactheading{
+    margin: 0;
+}
+.email-logo{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+.github-logo{
+    width: 25px;
+    height: 25px;
+    color: black;
+}

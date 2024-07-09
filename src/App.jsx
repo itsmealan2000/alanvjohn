@@ -31,16 +31,18 @@ function App() {
 
   const options = {
     smooth: true,
-    smoothClass:'has-scroll-smooth',
+
     tablet: {
       smooth: true,
+      smoothClass:'has-scroll-smooth',
+      scrollbarClass:'c-scrollbar',
     },
     smartphone: {
       smooth: true,
-      lerp: 0.05, 
-      touchMultiplier: 2, 
       scrollFromAnywhere: true,
       reloadOnContextChange:true,
+      smoothClass:'has-scroll-smooth',
+      scrollbarClass:'c-scrollbar',
     },
   };
 

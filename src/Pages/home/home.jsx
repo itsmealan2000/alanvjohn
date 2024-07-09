@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './home.css';
 import Me from '../../assets/home/me.png';
 import About from '../about/about';
+import Contact from '../contact/contact'
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,15 +32,14 @@ function Home() {
         });
       });
       mm.add("(max-width: 600px)", () => {
-        gsap.to(".aboutmain", {
-          duration: 0.2,
-          scrollTrigger: {
-            trigger: ".left",
-            start: "top top", 
-            end: "+=800",
-            scrub: true,
-            markers: false 
-          }
+        ScrollTrigger.create({
+          trigger: ".left",
+          pin:true,
+          start: "top top",
+          end: "+=100",
+          scrub:0.5,
+          yoyo:true,
+          markers: false
         });
       });
     }
@@ -72,15 +72,15 @@ function Home() {
         <div className="col right">
           <img src={Me} alt="Me" className="img-fluid profileimage"  data-scroll
             data-scroll-direction="vertical"
-            data-scroll-speed="0.8"
+            data-scroll-speed="0.5"
             data-scroll-section />
           <div className="circle" data-scroll
             data-scroll-direction="vertical"
-            data-scroll-speed="0.8"
+            data-scroll-speed="0.5"
             data-scroll-section></div>
           <div className="bluecircle"  data-scroll
             data-scroll-direction="vertical"
-            data-scroll-speed="0.8"
+            data-scroll-speed="0.5"
             data-scroll-section>
             <svg xmlns="http://www.w3.org/2000/svg" width="324" height="324" viewBox="0 0 324 324" fill="none">
               <g filter="url(#filter0_f_8_7)">
@@ -123,6 +123,7 @@ function Home() {
         </div>
       </div>
       <About/>
+      <Contact/>
     </div>
   );
 }
