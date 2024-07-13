@@ -114,3 +114,46 @@ img{
     }
 }
 
+
+/* tablet portait*/
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: var(--Number-2, 4rem);
+    }
+    p{
+        font-size: 1rem;
+    }
+    .left{
+        padding-top: 25%;
+        padding-bottom: 0;
+        height: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .right{
+        height: 79%;
+    }
+    .circle{
+        margin-left: 100px;
+        width: 500px;
+        height: 500px;
+        bottom: -150px;
+    }
+    .bluecircle{
+        width: 100px;
+        height: 100px;
+        bottom: 20px;
+        left: 0px;
+        display: none;
+    }
+    .redcircle{
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 250px;
+    }
+    .profileimage{
+        left: 80px;
+        bottom: -5px;
+    }
+}
