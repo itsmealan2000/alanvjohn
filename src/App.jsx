@@ -33,11 +33,13 @@ function App() {
     smooth: true,
 
     tablet: {
+      lerp:0.5,
       smooth: true,
       smoothClass:'has-scroll-smooth',
       scrollbarClass:'c-scrollbar',
     },
     smartphone: {
+      lerp:0.5,
       smooth: true,
       scrollFromAnywhere: true,
       reloadOnContextChange:true,

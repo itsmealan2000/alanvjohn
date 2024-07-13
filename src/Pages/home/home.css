@@ -1,10 +1,12 @@
-.mainhome{
+.mainhome {
     height: 100vh;
 }
-.row{
+
+.row {
     height: 100vh;
 }
-h1{
+
+h1 {
     color: #000;
     font-family: Soria;
     font-size: var(--Number-2, 100px);
@@ -14,9 +16,9 @@ h1{
     letter-spacing: normal;
     margin-top: 30%;
     margin-bottom: 0;
-
 }
-p{
+
+p {
     color: #000;
     font-family: "Satoshi Variable";
     font-size: 19.2px;
@@ -24,20 +26,23 @@ p{
     font-weight: 400;
     line-height: normal;
 }
-.left{
+
+.left {
     margin-left: 3%;
 }
 
-.right{
+.right {
     position: relative;
     overflow: hidden;
 }
-img{
+
+img {
     width: 103%;
     z-index: 2;
     position: absolute;
 }
-.circle{
+
+.circle {
     border-radius: 1119px;
     background: radial-gradient(231% 135.8% at 0.9% 2.98%, rgba(225, 220, 220, 0.4) 0%, rgba(0, 0, 0, 0.00) 100%);
     backdrop-filter: blur(25px);
@@ -47,7 +52,8 @@ img{
     flex-shrink: 0;
     z-index: 1;
 }
-.bluecircle{
+
+.bluecircle {
     width: 240px;
     height: 240px;
     flex-shrink: 0;
@@ -58,7 +64,8 @@ img{
     bottom: 10px;
     left: 10px;
 }
-.redcircle{
+
+.redcircle {
     width: 237px;
     height: 237px;
     flex-shrink: 0;
@@ -69,91 +76,165 @@ img{
     right: 2px;
 }
 
-
-/* mobile screen */
-@media only screen and (max-width: 600px){
-    h1{
-        font-size: var(--Number-2, 4rem);
+/* Tablet portrait */
+@media only screen and (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    .row{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
-    p{
+    h1 {
+        font-size: var(--Number-2, 4.27rem);
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .left {
+        padding-top: 25%;
+        padding-bottom: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .right {
+        height: 79%;
+    }
+    .circle {
+        margin-left: 200px;
+        width: 500px;
+        height: 500px;
+        bottom: -150px;
+    }
+    .bluecircle {
+        width: 100px;
+        height: 100px;
+        bottom: 20px;
+        left: 0px;
+        display: none;
+    }
+    .redcircle {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 250px;
+    }
+    .profileimage {
+        left: 80px;
+        bottom: -5px;
+    }
+}
+
+/* Tablet landscape */
+@media only screen and (max-height: 900px)  and (min-height: 400px) and (orientation: landscape) {
+    h1 {
+        font-size: var(--Number-2, 5rem);
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .right {
+        height: 95%;
+    }
+    .circle {
+        margin-left: 200px;
+        width: 700px;
+        height: 700px;
+        bottom: -300px;
+    }
+    .bluecircle {
+        width: 80px;
+        height: 80px;
+        bottom: 10px;
+        left: 0px;
+        display: none;
+    }
+    .redcircle {
+        width: 80px;
+        height: 80px;
+        left: 40%;
+        top: 200px;
+    }
+    .profileimage {
+        left: 60px;
+        bottom: -50px;
+    }
+}
+
+/* Mobile portrait */
+@media only screen and (max-width: 599px) and (orientation: portrait) {
+    h1 {
+        font-size: var(--Number-2, 5rem);
+    }
+    p {
         font-size: 1.1rem;
     }
-    .left{
+    .left {
         padding-top: 25%;
         padding-bottom: 0;
         width: 100%;
         margin-left: 0;
         margin-bottom: 0;
     }
-    .right{
+    .right {
         height: 500px;
-        top:-50px;
+        top: -50px;
     }
-    .circle{
+    .circle {
         margin-left: 200px;
         width: 500px;
         height: 500px;
         bottom: -150px;
     }
-    .bluecircle{
+    .bluecircle {
         width: 100px;
         height: 100px;
         bottom: 20px;
         left: 0px;
         display: none;
     }
-    .redcircle{
+    .redcircle {
         width: 100px;
         height: 100px;
         top: 0px;
         left: 50%;
     }
-    .profileimage{
+    .profileimage {
         left: 100px;
         bottom: 0px;
     }
 }
 
-
-/* tablet portait*/
-@media only screen and (max-width: 768px){
-    h1{
-        font-size: var(--Number-2, 4rem);
+/* Mobile portrait */
+@media only screen and (max-height: 400px) and (orientation: landscape) {
+    h1 {
+        font-size: var(--Number-2, 5rem);
     }
-    p{
-        font-size: 1rem;
+    p {
+        font-size: 1.2rem;
     }
-    .left{
-        padding-top: 25%;
-        padding-bottom: 0;
-        height: 100%;
-        margin-left: 0;
-        margin-bottom: 0;
+    .right {
+        height: 95%;
     }
-    .right{
-        height: 79%;
+    .circle {
+        margin-left: 200px;
+        width: 700px;
+        height: 700px;
+        bottom: -300px;
     }
-    .circle{
-        margin-left: 100px;
-        width: 500px;
-        height: 500px;
-        bottom: -150px;
-    }
-    .bluecircle{
-        width: 100px;
-        height: 100px;
-        bottom: 20px;
+    .bluecircle {
+        width: 80px;
+        height: 80px;
+        bottom: 10px;
         left: 0px;
         display: none;
     }
-    .redcircle{
-        width: 100px;
-        height: 100px;
-        left: 50%;
-        top: 250px;
+    .redcircle {
+        width: 80px;
+        height: 80px;
+        left: 40%;
+        top: 200px;
     }
-    .profileimage{
-        left: 80px;
-        bottom: -5px;
+    .profileimage {
+        left: 60px;
+        bottom: -50px;
     }
 }

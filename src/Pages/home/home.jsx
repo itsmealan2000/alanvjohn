@@ -31,15 +31,9 @@ function Home() {
           }
         });
       });
-      mm.add("(max-width: 600px)", () => {
+      mm.add("(max-width: 599px)", () => {
         ScrollTrigger.create({
           trigger: ".left",
-          pin:true,
-          start: "top top",
-          end: "+=100",
-          scrub:0.5,
-          yoyo:true,
-          markers: false
         });
       });
     }
