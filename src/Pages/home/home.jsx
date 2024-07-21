@@ -29,7 +29,7 @@ function home() {
           </p>
         </div>
         <div className='col-12 col-md-6 right'>
-          <img src={Me} alt='profileimage' className='me img-fluid w-100' />
+          <img src={Me} alt='profileimage' className='me img-fluid w-75' />
           <div className="circle"></div>
         </div>
       </div>

@@ -17,3 +17,19 @@
     font-weight: 400;
     line-height: normal;
 }
+
+/* darktheme */
+@media (prefers-color-scheme: dark) {
+    .title{
+        color: #ffffff;
+    }
+    .links{
+        color: #ffffff;
+    }
+    .togglebtn{
+        background-color: #ffffff;
+    }
+    .navbar{
+        background-color: #000;
+    }
+}

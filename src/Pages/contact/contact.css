@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 .contact{
     padding: 50px;
@@ -22,4 +23,18 @@
     width: 25px;
     height: 25px;
     color: black;
+}
+
+/* darktheme */
+@media (prefers-color-scheme: dark) {
+    .maincontact{
+        background-color: #121212;
+        color: #dadada;
+    }
+    .email-logo{
+        color: white;
+    }
+    .github-logo{
+        color: white;
+    }
 }

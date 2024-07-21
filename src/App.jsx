@@ -2,8 +2,6 @@ import React, { useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
-import gsap from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Pages
 import Home from './Pages/home/home';
@@ -13,7 +11,6 @@ import Contact from './Pages/contact/contact';
 
 // Components
 import Navbar from './Components/Navbar/navbar';
-import Footer from './Components/Footer/footer';
 
 // Framer Motion transitions
 const pageVariants = {
@@ -31,19 +28,21 @@ function App() {
 
   const options = {
     smooth: true,
-
+    smoothClass:'has-scroll-smooth',
+    scrollbarClass:'c-scrollbar',
     tablet: {
       smooth: true,
     },
     smartphone: {
       smooth: true,
+      smoothClass:'has-scroll-smooth',
     },
   };
 
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
     <Navbar />
-      <div data-scroll-container ref={ref}>
+      <div>
         <Routes>
           <Route
             path='/'
@@ -103,7 +102,6 @@ function App() {
           />
         </Routes>
       </div>
-
     </LocomotiveScrollProvider>
   );
 }

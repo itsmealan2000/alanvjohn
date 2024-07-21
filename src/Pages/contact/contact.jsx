@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 function contact() {
   return (
     <div className='maincontact container-fluid'>
-      <div className='contact container d-flex flex-column flex-wrap justify-content-center mt-5 pt-5'>
+      <div className='contact container d-flex flex-column flex-wrap justify-content-center '>
         <h1 className='contactheading'>Contact Me</h1>
         <p>For any queries or suggestions, feel free to contact Me.</p>
         <div className='contact-logo container d-flex flex-row'>

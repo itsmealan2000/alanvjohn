@@ -10,13 +10,13 @@ function NavScrollExample() {
   const currentPath = location.pathname;
 
   return (
-    <Navbar expand="md" className="bg-light mt-2 border-bottom border-dark border-3">
+    <Navbar expand="md" className="bg-auto border-bottom border-3 navbar">
       <Container fluid>
         <Navbar.Brand href="#" className="title">AVJ</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" className='togglebtn'/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="ms-auto my-2 my-lg-0"
+            className="ms-auto my-2 my-lg-0 "
             style={{ maxHeight: '150px' }}
             navbarScroll
           >
