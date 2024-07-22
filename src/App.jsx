@@ -11,6 +11,7 @@ import Contact from './Pages/contact/contact';
 
 // Components
 import Navbar from './Components/Navbar/navbar';
+import { ThemeProvider } from './Components/custom/Theme';
 
 // Framer Motion transitions
 const pageVariants = {
@@ -35,11 +36,13 @@ function App() {
     },
     smartphone: {
       smooth: true,
-      smoothClass:'has-scroll-smooth',
+      scrollFromAnywhere:true,
+      reloadOnContextChange:true,
     },
   };
 
   return (
+    <ThemeProvider>
     <LocomotiveScrollProvider options={options} containerRef={ref}>
     <Navbar />
       <div>
@@ -103,6 +106,7 @@ function App() {
         </Routes>
       </div>
     </LocomotiveScrollProvider>
+    </ThemeProvider>
   );
 }
 

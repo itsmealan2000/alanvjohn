@@ -19,17 +19,23 @@
 }
 
 /* darktheme */
-@media (prefers-color-scheme: dark) {
-    .title{
+@media (prefers-color-scheme: dark){
+    .dark-theme .title{
         color: #ffffff;
     }
-    .links{
+    .dark-theme .title:hover{
+        color: #848181;
+    }
+    .dark-theme .links{
         color: #ffffff;
     }
-    .togglebtn{
+    .dark-theme .links:hover {
+        color: #848181; 
+      }
+    .dark-theme .togglebtn{
         background-color: #ffffff;
     }
-    .navbar{
+    .dark-theme .navbar{
         background-color: #000;
     }
 }

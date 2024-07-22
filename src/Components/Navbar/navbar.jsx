@@ -1,18 +1,20 @@
-import React from 'react';
+import React,{ useContext   } from 'react';
 import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbar.css';
+import ThemeContext from '../custom/Theme';
 
 function NavScrollExample() {
   const location = useLocation();
   const currentPath = location.pathname;
+  const { toggleTheme } = useContext(ThemeContext);
 
   return (
-    <Navbar expand="md" className="bg-auto border-bottom border-3 navbar">
+    <Navbar expand="md" className="bg-auto border-bottom border-3 navbar ">
       <Container fluid>
-        <Navbar.Brand href="#" className="title">AVJ</Navbar.Brand>
+        <Navbar.Brand href=" " className="title" onClick={toggleTheme}>AVJ</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='togglebtn'/>
         <Navbar.Collapse id="navbarScroll">
           <Nav

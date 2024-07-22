@@ -14,7 +14,7 @@ function home() {
   return (
     <>
     {/* homepage */}
-    <div id="home" className='viewhome container-fluid' data-scroll-container ref={homeRef}>
+    <div id="home" className='viewhome container-fluid' data-scroll-container  ref={homeRef}>
       <div className='row' >
         <div className='col-sm-8 col-md-6 left'>
           <h1 className='container'>
@@ -35,7 +35,7 @@ function home() {
       </div>
     </div>
     {/* otherpages */}
-    <div className='about'><About/></div>
+      <About/>
     <Contact/>
     </>
   )

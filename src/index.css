@@ -11,7 +11,7 @@ body {
     color: #000000;
   }
   @media (prefers-color-scheme: dark) {
-    body {
+    body.dark-theme {
       background-color: #121212;
       color: #ffffff;
     }

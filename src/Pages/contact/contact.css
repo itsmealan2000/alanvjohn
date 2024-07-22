@@ -27,14 +27,14 @@
 
 /* darktheme */
 @media (prefers-color-scheme: dark) {
-    .maincontact{
+    .dark-theme .maincontact{
         background-color: #121212;
         color: #dadada;
     }
-    .email-logo{
+    .dark-theme .email-logo{
         color: white;
     }
-    .github-logo{
+    .dark-theme .github-logo{
         color: white;
     }
 }
