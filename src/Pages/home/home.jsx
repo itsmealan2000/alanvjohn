@@ -1,12 +1,10 @@
-import React,{useEffect, useRef} from 'react'
+import React,{useRef} from 'react'
 // assets 
 import "./home.css";
 import Me from "../../assets/home/me.png";
 //otherpages
 import About from '../about/about'
 import Contact from '../contact/contact'
-
-//componets
 
 function home() {
   const homeRef = useRef(null);
