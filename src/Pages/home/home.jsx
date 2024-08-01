@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React,{useEffect, useRef} from 'react'
 // assets 
 import "./home.css";
 import Me from "../../assets/home/me.png";
@@ -7,10 +7,10 @@ import About from '../about/about'
 import Contact from '../contact/contact'
 
 //componets
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 function home() {
   const homeRef = useRef(null);
+  
   return (
     <>
     {/* homepage */}

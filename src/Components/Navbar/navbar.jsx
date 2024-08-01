@@ -1,15 +1,46 @@
-import React,{ useContext   } from 'react';
+import React,{ useContext,useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbar.css';
 import ThemeContext from '../custom/Theme';
+import toast, { Toaster } from 'react-hot-toast';
 
 function NavScrollExample() {
   const location = useLocation();
   const currentPath = location.pathname;
-  const { toggleTheme } = useContext(ThemeContext);
+  const { theme,toggleTheme } = useContext(ThemeContext);
+  const onPageLoad = () => {
+    toast.dismiss();
+    if (theme === 'light') {
+      toast('Ahh, my eyes! I need a dark theme.🦇', {
+        duration: 4000,
+        position: 'top-left',
+        style: {
+          backgroundColor: '#1f1f1f',
+          color: '#fff',
+        },
+        className: 'teaser',
+        icon: '👈',
+      });
+    } else if (theme === 'dark') {
+      toast('My eyes are on vacation—bring on the light theme!', {
+        duration: 4000,
+        position: 'top-left',
+        style: {
+          backgroundColor: '#fff',
+          color: '#000',
+          minWidth:'30%',
+        },
+        className: 'teaser',
+        icon: '👈',
+      });
+    }
+  };
+useEffect(() => {
+  onPageLoad();
+}, [theme]);
 
   return (
     <Navbar expand="md" className="bg-auto border-bottom border-3 navbar ">
@@ -31,7 +62,8 @@ function NavScrollExample() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+      <Toaster />
+    </Navbar>    
   );
 }
 
