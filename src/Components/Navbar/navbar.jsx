@@ -15,7 +15,7 @@ function NavScrollExample() {
     toast.dismiss();
     if (theme === 'light') {
       toast('Ahh, my eyes! I need a dark theme.🦇', {
-        duration: 4000,
+        duration: 3000,
         position: 'top-left',
         style: {
           backgroundColor: '#1f1f1f',
@@ -26,7 +26,7 @@ function NavScrollExample() {
       });
     } else if (theme === 'dark') {
       toast('My eyes are on vacation—bring on the light theme!', {
-        duration: 4000,
+        duration: 3000,
         position: 'top-left',
         style: {
           backgroundColor: '#fff',
@@ -39,11 +39,13 @@ function NavScrollExample() {
     }
   };
 useEffect(() => {
-  onPageLoad();
-}, [theme]);
+  if (currentPath === '/') {  
+    onPageLoad();
+  }
+}, [theme,currentPath]);
 
   return (
-    <Navbar expand="md" className="bg-auto border-bottom border-3 navbar ">
+    <Navbar expand="md" className="bg-auto m-1 border-bottom border-3 navbar ">
       <Container fluid>
         <Navbar.Brand href=" " className="title" onClick={toggleTheme}>AVJ</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='togglebtn'/>

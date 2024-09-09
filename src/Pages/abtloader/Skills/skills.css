@@ -1,0 +1,21 @@
+.skill-holder{
+    display: flex;
+   text-align: center;
+   flex-direction: column;
+    margin-bottom: 20%;
+}
+.bg-skill{
+  width: 100%;
+}
+.header-skills{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: white;
+}
+@media only screen and (prefers-color-scheme: dark) {
+  .dark-theme .header-skills{
+      background-color: #121212;
+  }
+}

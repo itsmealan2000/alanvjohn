@@ -1,0 +1,18 @@
+.skill-holder{
+    display: flex;
+   text-align: center;
+   flex-direction: column;
+}
+.bg-skill{
+  width: 100%;
+}
+.header-skills{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: white;
+}
+.list{
+    margin-bottom: 50%;
+}

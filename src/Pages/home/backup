@@ -1,0 +1,215 @@
+/* Global Styles */
+.viewhome {
+    height: 100vh;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Changed from 110% to 100% for better layout control */
+    background-color: white;
+}
+
+h1 {
+    color: #000;
+    font-family: Soria;
+    font-size: var(--Number-2, 100px);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+p {
+    color: #000;
+    font-family: "Satoshi Variable";
+    font-size: 19.2px;
+    font-weight: 400;
+}
+
+.right {
+    position: relative;
+    background-color: white;
+    margin-top: 12%;
+}
+
+.left {
+    position: relative;
+    background-color: white;
+    margin-top: 20%;
+    height: 100vh;
+}
+
+.me {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Shapes */
+.line {
+    width: 100%;
+    max-width: 800px;
+    height: 8px;
+    background-color: #000;
+}
+
+.circle {
+    border-radius: 50%; /* Simplified border-radius */
+    background: radial-gradient(circle, rgba(225, 220, 220, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(25px);
+    position: absolute;
+    width: 1119px;
+    height: 1119px;
+    z-index: 0;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    .dark-theme .viewhome {
+        background-color: #121212;
+    }
+    .dark-theme .row {
+        background-color: #121212;
+    }
+    .dark-theme .left {
+        background-color: #121212;
+    }
+    .dark-theme h1, .dark-theme p {
+        color: #fff;
+    }
+
+    .dark-theme .right {
+        background-color: #121212;
+    }
+
+    .dark-theme .line {
+        background-color: #fff;
+    }
+
+    .dark-theme .circle {
+        background: radial-gradient(circle, rgba(225, 220, 220, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .dark-theme .me {
+        filter: grayscale(50%);
+    }
+}
+
+/* Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    h1 {
+        font-size: var(--Number-2, 60px);
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .circle {
+        width: 500px;
+        height: 500px;
+        left: 150px;
+        top: 300px;
+    }
+
+    .me {
+        left: 150px;
+        top: 300px;
+    }
+}
+  
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: var(--Number-2, 80px);
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .circle {
+        width: 800px;
+        height: 800px;
+        left: 100px;
+        top: 200px;
+    }
+
+    .me {
+        left: 50px;
+        top: 100px;
+    }
+}
+  
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h1 {
+        font-size: var(--Number-2, 50px);
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .circle {
+        width: 1000px;
+        height: 1000px;
+        left: 100px;
+        top: 200px;
+    }
+
+    .me {
+        left: 100px;
+        top: 300px;
+    }
+}
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h1 {
+        font-size: var(--Number-2, 100px);
+    }
+
+    p {
+        font-size: 19.2px;
+    }
+
+    .circle {
+        width: 1000px;
+        height: 1000px;
+        left: 100px;
+        top: 200px;
+    }
+
+    .me {
+        left: 100px;
+        top: 200px;
+    }
+}
+  
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .viewhome {
+        height: 120vh;
+    }
+
+    h1 {
+        font-size: var(--Number-2, 100px);
+    }
+
+    p {
+        font-size: 19.2px;
+    }
+
+    .circle {
+        width: 1000px;
+        height: 1000px;
+        left: 100px;
+        top: 20px;
+    }
+
+    .me {
+        left: 200px;
+        top: 150px;
+    }
+}

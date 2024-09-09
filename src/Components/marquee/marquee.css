@@ -1,0 +1,36 @@
+
+.marquee__part {
+    flex-shrink: 0;
+    padding: 0 4px;
+    padding-left: 20%;
+  }
+  
+  .marquee {
+    background: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.667vw;
+    padding: 32px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .marquee__inner {
+    -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+  .skill-icon {
+    width: 200%;
+    height: 200%;
+  }
+  @media (max-width: 575.98px) {
+    .skill-icon {
+      width: 300%;
+      height: 200%;
+    }
+  }

@@ -1,10 +1,11 @@
-html{
-    scroll-behavior:smooth;
+html,body{
+  overflow: hidden;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1{
+  font-family: "Soria";
+}
+p{
+  font-family: "Satoshi Variable";
 }
 body {
     background-color: #ffffff;
@@ -16,3 +17,4 @@ body {
       color: #ffffff;
     }
   }
+
