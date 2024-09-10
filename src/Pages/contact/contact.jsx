@@ -40,7 +40,7 @@ function contact({LocomotiveScrollProvider}) {
             {/* git */}
             <div className='git ms-4' data-scroll data-scroll-class="in-view">
               <p>
-                <a href='https://github.com/itsmealan2000'>
+                <a href='https://github.com/itsmealan2000' target="_blank">
                   <FaGithub className='github-logo' />
                 </a>
               </p>

@@ -6,7 +6,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 // Pages
 import Pageloader from "./Pages/pageloader";
 import Aboutldr from "./Pages/abtloader/aboutldr";
-import Project from "./Pages/project/projects";
+import Projects from "./Pages/project/projects";
 import Contact from "./Pages/contact/contact";
 
 // Components
@@ -93,7 +93,7 @@ function App() {
                   variants={pageVariants}
                   transition={pageTransition}
                 >
-                  <Project />
+                  <Projects />
                 </motion.div>
               }
             />

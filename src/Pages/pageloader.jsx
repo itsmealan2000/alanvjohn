@@ -3,6 +3,7 @@ import Home from './home/home'
 import About from './abtloader/about/about'
 import Skill from './abtloader/Skills/skills'
 import Contact from './contact/contact'
+import Projects from './project/projects'
 
 //componet 
 import Marquee from '../Components/marquee/marquee';
@@ -19,7 +20,8 @@ function pageloader() {
     <section className='section2' ><About/></section>
     <section className="section3" ><Marquee/> </section>
     <section className='section3' ><Skill/></section>
-    <section className='section4' ><Contact/></section>
+    <section className='section4' ><Projects/></section>
+    <section className='section5' ><Contact/></section>
     </>
   )
 }

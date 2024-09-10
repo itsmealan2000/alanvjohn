@@ -59,7 +59,7 @@ useEffect(() => {
               <Nav.Link href="/" className='links'> Home </Nav.Link>
             )}
             <Nav.Link href="/about" className='links'> About </Nav.Link>
-            {/* <Nav.Link href="/projects" className='links'> Projects </Nav.Link> */}
+            <Nav.Link href="/projects" className='links'> Projects </Nav.Link>
             <Nav.Link href="/contact" className='links'> Contact </Nav.Link>
           </Nav>
         </Navbar.Collapse>
