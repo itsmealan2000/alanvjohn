@@ -13,8 +13,8 @@ const Skills = () => {
               data-scroll-sticky // Attibute that enables the sticky scroll
               data-scroll-target="#stick">Skills</h1>
         </div>
-        <div data-scroll
-              data-scroll-class="in-view">
+        <div data-scroll 
+              data-scroll-class="in-view" className="skillslist">
                 <h6>Flutter</h6>
                 <h6>JavaScript</h6>
                 <h6>HTML</h6>

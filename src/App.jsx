@@ -30,10 +30,15 @@ function App() {
 
   const options = {
     smooth: true,
+    reloadOnContextChange:true,
+    lerp: 0.05,
+    repeat:true,
     tablet: {
       smooth: true,
+      reloadOnContextChange:true,
     },
     smartphone: {
+      lerp: 0.1,
       smooth: true,
       scrollFromAnywhere: true,
       reloadOnContextChange: true,

@@ -6,13 +6,22 @@
 .bg-skill{
   width: 100%;
 }
+.skillslist{
+  background-color: white;
+}
 .header-skills{
     font-size: 6rem;
     text-align: center;
     background-color: white;
 }
+[data-scroll-containe]{
+  resize: auto;
+}
 @media only screen and (prefers-color-scheme: dark) {
   .dark-theme .header-skills{
+      background-color: #121212;
+  }
+  .dark-theme .skillslist{
       background-color: #121212;
   }
 }

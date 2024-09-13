@@ -1,3 +1,4 @@
+
 .project-holder{
     text-align: center;
     width: 100%;
@@ -17,22 +18,27 @@
     transition: 0.3s ease-in-out;
     border-radius: 15px;
     height: max-content;
-    opacity: 70%;
+    opacity: 80%;
     display: flex;
     flex-direction: column;
     max-height: 40%;
+    background-color: rgba(255, 255, 255, 0.004);
 }
+
 .card .card-body {
     position: relative;
     top: -40%;
     padding: 10px 15px;
     color: #111;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
-    background-color: #fff;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.944);
     border-radius: 15px;
 }
 .cardgen {
@@ -42,7 +48,7 @@
     background-color: white;
 }
 .card-img-top{
-    filter: grayscale();
+    filter: grayscale(1);
     border-radius: 15px;
 }
 .card:hover {
@@ -52,17 +58,19 @@
     border-radius: 10px;
     opacity: 100%;
     max-height: 70%;
+    background-color: rgba(255, 255, 255, 0)
 }
 .card:hover .card-img-top {
-    filter: blur(5px);
-    transition: 0.5s ease-in-out;
+    transition: 0.05s ease-in-out;
+    filter: grayscale(0);
+    border-radius: 10px 10px 0 0;
 }   
 .card:hover .card-body {
     visibility: visible;
     opacity: 1;
     transition-delay: 0.2s;
-    margin-top: 20px; 
-    
+    margin-top: 0px; 
+    border-radius: 0 0 15px 15px;
 }   
 @media only screen and (prefers-color-scheme: dark) {
     .dark-theme .project-holder{
@@ -72,6 +80,10 @@
         background-color: #121212;
     }   
     .dark-theme .card-text{
-        color: black;
+        color: white;
     }  
+    .dark-theme .card-body{
+        background-color: #121212;
+        color: white;
+    }
 }
