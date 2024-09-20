@@ -2,7 +2,7 @@
 .project-holder{
     text-align: center;
     width: 100%;
-    height: min-content;
+    height: 100vh;
     margin-bottom: 20%;
     background-color: white;
 }
@@ -85,5 +85,11 @@
     .dark-theme .card-body{
         background-color: #121212;
         color: white;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .project-holder{
+        height: max-content;
     }
 }

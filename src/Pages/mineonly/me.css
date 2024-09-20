@@ -1,0 +1,82 @@
+[data-scroll-section]{
+    min-height: max-content;
+}
+.adminpage {
+    padding: 20px;
+    background-color: var(--bg-color, #f9f9f9);
+    color: var(--text-color, #333);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messages-list {
+    margin-top: 20px;
+  }
+  
+  .messages-list h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .messages-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5%;
+  }
+  
+  .messages-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 2%;
+    margin-bottom: 1%;
+    transition: background-color 0.3s;
+  }
+  
+  .messages-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  strong {
+    display: block;
+    font-weight: bold;
+  }
+  
+  small {
+    color: #777;
+  }
+  @media (prefers-color-scheme: dark) {
+    .dark-theme .adminpage {
+        background-color: #121212;
+        color: #fff;
+        }
+        .dark-theme h1, .dark-theme p {
+            color: #fff;
+        }
+        .dark-theme .messages-list li {
+            background-color: #282828;
+            color: #fff;
+            border-color: #121212;
+        }
+        .dark-theme .messages-list li:hover {
+            background-color: #333;
+        }
+        .dark-theme strong {
+            color: #fff;
+        }
+        .dark-theme small {
+            color: #aaa;
+        }
+}
+@media (max-width: 575.98px) { 
+    .adminpage{
+        padding: 10px;
+    }
+    .messages-list li {
+        padding: 5%;
+    }
+    .messages-list ul{
+        margin-bottom: 20%;
+    }
+}

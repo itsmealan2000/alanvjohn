@@ -116,7 +116,7 @@ const handleSubmit = async (e) => {
 
   return (
     <div className="contactpage">
-      <div className="maincontact container-fluid" data-scroll-container ref={contactRef}>
+      <div className="maincontact " data-scroll-container ref={contactRef}>
         <div className="contact container d-flex flex-column flex-wrap justify-content-center" data-scroll-section>
           <h1 className="contactheading" data-scroll data-scroll-delay=".1" data-scroll-class="in-view">
             Contact Me
@@ -169,6 +169,8 @@ const handleSubmit = async (e) => {
               className="form-control m-2"
               data-scroll
               data-scroll-speed="1"
+                rows="5"
+                cols="30"
               value={formData.message}
               onChange={handleChange}
               required

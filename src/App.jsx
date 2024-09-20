@@ -8,6 +8,7 @@ import Pageloader from "./Pages/pageloader";
 import Aboutldr from "./Pages/abtloader/aboutldr";
 import Projects from "./Pages/project/projects";
 import Contact from "./Pages/contact/contact";
+import Me from "./Pages/mineonly/me";
 
 // Components
 import Navbar from "./Components/Navbar/navbar";
@@ -38,9 +39,8 @@ function App() {
       reloadOnContextChange:true,
     },
     smartphone: {
-      lerp: 0.1,
+      lerp: 0.05,
       smooth: true,
-      scrollFromAnywhere: true,
       reloadOnContextChange: true,
     },
   };
@@ -113,6 +113,20 @@ function App() {
                   transition={pageTransition}
                 >
                   <Contact />
+                </motion.div>
+              }
+            />
+            <Route
+              path="/me"
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="in"
+                  exit="out"
+                  variants={pageVariants}
+                  transition={pageTransition}
+                >
+                  <Me />
                 </motion.div>
               }
             />

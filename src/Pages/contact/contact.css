@@ -6,6 +6,10 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    padding-bottom: 10%;
+}
+textarea{
+    resize:none;
 }
 .contact{
     padding: 50px;
