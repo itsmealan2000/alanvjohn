@@ -25,7 +25,9 @@
     height: 25px;
     color: black;
 }
-
+.teaser1{
+    min-width: 40%;
+}
 /* darktheme */
 @media (prefers-color-scheme: dark) {
     .dark-theme .maincontact{
