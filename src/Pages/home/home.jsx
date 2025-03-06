@@ -43,7 +43,7 @@ function home({LocomotiveScrollProvider}) {
                   </p>
                 </div>
                 <div className='col-12 col-md-6 right' >
-                <img src={Me} alt='Profile picture of Alan V John' className='me img-fluid w-75' />
+                <img src={Me} alt='Profile picture of Alan V John' className='me img-fluid w-75' fetchPriority='auto'/>
                   <div className="circle"></div>
                 </div>
               </div>
