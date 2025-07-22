@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectCard = ({ title, description, imgSrc, link }) => {
   return (
-<div className='con'>
+<div className='container'>
       <div className="card bg-auto" >
         <img src={imgSrc} className="card-img-top" alt={title} />
         <div className="card-body">

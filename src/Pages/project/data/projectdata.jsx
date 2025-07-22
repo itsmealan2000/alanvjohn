@@ -4,6 +4,7 @@ import interestimg from './imgs/project_interest calculator.png'
 import cardealer from "./imgs/project_CarDealership.png"
 import doctorappoinment from "./imgs/project_doctorappoinment.png"
 import videoconferenceapp from "./imgs/project_videoconferenceapp.png"
+import powertech from "./imgs/project_powertech.png"
 const projectData = [
   {
     id: 1,
@@ -33,6 +34,14 @@ const projectData = [
     imgSrc: videoconferenceapp,
     link: "https://github.com/itsmealan2000/Videoconference_group1.git"
   },
+  {
+    id: 5,
+    title: "Powertech Website",
+    description: "A professional website for Powertech, showcasing their services and expertise in the industry.",
+    imgSrc: powertech,
+    link: "https://www.powertech.ind.in/"
+  },
+
 ];
 
 export default projectData;
