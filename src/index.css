@@ -1,20 +1,18 @@
-html,body{
+html,
+body {
   overflow: hidden;
 }
-h1{
+h1 {
   font-family: "Soria";
 }
-p{
+p {
   font-family: "Satoshi Variable";
 }
 body {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  @media (prefers-color-scheme: dark) {
-    body.dark-theme {
-      background-color: #121212;
-      color: #ffffff;
-    }
-  }
-
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}

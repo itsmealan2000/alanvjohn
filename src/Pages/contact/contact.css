@@ -1,47 +1,44 @@
-
-.maincontact{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding-bottom: 10%;
+.maincontact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 10%;
 }
-textarea{
-    resize:none;
+textarea {
+  resize: none;
 }
-.contact{
-    padding: 50px;
-    width: 75%;
-    border-radius: 10px;
+.contact {
+  padding: 50px;
+  width: 75%;
+  border-radius: 10px;
 }
-.contactheading{
-    margin: 0;
+.contactheading {
+  margin: 0;
 }
-.email-logo{
-    width: 25px;
-    height: 25px;
-    color: black;
+.email-logo {
+  width: 25px;
+  height: 25px;
+  color: black;
 }
-.github-logo{
-    width: 25px;
-    height: 25px;
-    color: black;
+.github-logo {
+  width: 25px;
+  height: 25px;
+  color: black;
 }
-.teaser1{
-    min-width: 40%;
+.teaser1 {
+  min-width: 40%;
 }
 /* darktheme */
-@media (prefers-color-scheme: dark) {
-    .dark-theme .maincontact{
-        background-color: #121212;
-        color: #dadada;
-    }
-    .dark-theme .email-logo{
-        color: white;
-    }
-    .dark-theme .github-logo{
-        color: white;
-    }
+.dark-theme .maincontact {
+  background-color: #121212;
+  color: #dadada;
+}
+.dark-theme .email-logo {
+  color: white;
+}
+.dark-theme .github-logo {
+  color: white;
 }
