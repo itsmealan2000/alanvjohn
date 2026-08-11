@@ -134,7 +134,7 @@ const handleSubmit = async (e) => {
             </div>
             <div className="git ms-4" data-scroll data-scroll-class="in-view">
               <p>
-                <a href="https://github.com/itsmealan2000" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/alanvjohn" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="github-logo" />
                 </a>
               </p>
